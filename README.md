@@ -10,5 +10,6 @@
 - Use o arquivo json `medalists.json` para rankear os países por total de medalhas em ordem descendente.
 - Apresente o total por país, assim como o total de ouro, prata e bronze de cada país.
 - Coloque uma busca por nome do país.
+- (Opcional) Ver todos medalhistas ao selecionar um país do ranking
 - O design é importante para nós e você está livre para usar sua criatividade.
 - Estruture as pastas, arquivos e codigos como se fosse um projeto real.
