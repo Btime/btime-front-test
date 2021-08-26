@@ -34,10 +34,8 @@ function formatDate() {
   teste.forEach((cur) => {
     const resgat = [];
       cur[1].forEach((aux) => {
-        // console.log(aux)
         resgat.push(aux);
       })
-      // console.log(resgat);
       const format = {
       pais: cur[0],
       atletas: cur[1],
@@ -61,15 +59,10 @@ function formatDate() {
         default:
         // default
       }
-      // if(cur.medal === 'Gold' || cur.medal === 'Silver' || cur.medal === 'Bronze'){
-      //   format.medalha = cur.medal
-      //   format.atleta = cur.athlete
-      // }
     })
     auxFor.push(format);                                   
   })
 }
 formatDate();
-// console.log(auxFor);  
 
 export default auxFor;

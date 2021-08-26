@@ -4,7 +4,6 @@ import auxFor from '../services/FilterCountries';
 function Ranking() {
   const [ check, setCheck ] = useState(false);
   const [ country, setCountry ] = useState(false);
-  // const atletas = true;
 
   const [ inputValue, setInputValue ] = useState('');
 
@@ -18,10 +17,9 @@ function Ranking() {
     })
     setCountry({ country });
   }
-  // console.log(check)
 
   return (
-    <>
+    <div>
       <div className="App-header">
         <header>
           <label>
@@ -64,7 +62,8 @@ function Ranking() {
           </table>
         </div>
         <div className="p-2 bd-highlight">
-          {check &&  <table className="table table-sm">
+        {
+          check &&  <table className="table table-sm">
             <thead>
               <tr>
                 <th>Atleta</th>
@@ -75,8 +74,8 @@ function Ranking() {
             {
               auxFor.map((curFilter) => {
                 if (country.country === curFilter.pais) {
-                  return curFilter.atletas.map((cur) => (
-                    <tr>
+                  return curFilter.atletas.map((cur, index) => (
+                    <tr key={index}>
                       <td>{ cur.athlete }</td>
                       <td>{ cur.medal }</td>
                     </tr>
@@ -85,10 +84,11 @@ function Ranking() {
               })
             }
             </tbody>
-          </table>}
-          </div>
+          </table>
+        }
+        </div>
       </div>
-    </>
+    </div>
   );
 }
 
