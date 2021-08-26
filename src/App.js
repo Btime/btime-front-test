@@ -3,7 +3,7 @@ import Ranking from './Pages/Ranking';
 import { BrowserRouter, Route } from 'react-router-dom';
 import Home from './Pages/Home';
 import Header from './components/Header';
-import './App.css';
+// import './App.css';
 
 function App() {
   return (

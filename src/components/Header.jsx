@@ -2,10 +2,10 @@ import React from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 
-function Header({name}) {
+function Header({ name }) {
   return (
     <div>
-      {name}
+      { name }
     </div>
   )
 }

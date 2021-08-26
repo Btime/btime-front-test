@@ -2,6 +2,7 @@ import data from './medalists.json';
 
 const arrayFilter = data.map((cur) => cur.country);
 const noRepeat = [...new Set(arrayFilter)];
+let result = [];
 
 const arrayFinal = [];
 function filterCountries() {
@@ -18,7 +19,7 @@ filterCountries();
 
 const auxFor = [];
 function formatDate() {
-  const result = arrayFinal.reduce(
+  result = arrayFinal.reduce(
     (h, car) => Object.assign(h, { [car.country]:( h[car.country] || []
   )
   .concat(
@@ -40,8 +41,6 @@ function formatDate() {
       const format = {
       pais: cur[0],
       atletas: cur[1],
-      medalha: '$',
-      atleta: '',
       ouro,
       prata,
       bronze,
@@ -62,10 +61,10 @@ function formatDate() {
         default:
         // default
       }
-      if(cur.medal === 'Gold' || cur.medal === 'Silver' || cur.medal === 'Bronze'){
-        format.medalha = cur.medal
-        format.atleta = cur.athlete
-      }
+      // if(cur.medal === 'Gold' || cur.medal === 'Silver' || cur.medal === 'Bronze'){
+      //   format.medalha = cur.medal
+      //   format.atleta = cur.athlete
+      // }
     })
     auxFor.push(format);                                   
   })
