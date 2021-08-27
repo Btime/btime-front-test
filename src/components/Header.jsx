@@ -1,12 +1,13 @@
 import React from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
+// import '../style/Header.css';
 
 function Header({ name }) {
   return (
-    <div>
+    <header className='centerHeader'>
       { name }
-    </div>
+    </header>
   )
 }
 

@@ -1,0 +1,109 @@
+.center {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-image: url('https://brasil.cambly.com/wp-content/uploads/2019/08/sports-esportes-em-ingles.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  /* background-size: 100vh; */
+}
+
+.contentCenter {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.contentGold {
+  display: flex;
+}
+
+.medalCountry {
+  width: 30px;
+  margin-right: 130px;
+}
+
+.medalGold {
+  width: 30px;
+  margin-right: 75px;
+}
+.medalSilver {
+  width: 30px;
+  margin-right: 90px;
+}
+.medalBronze {
+  width: 30px;
+  margin-right: 140px;
+}
+
+.medalTotal {
+  width: 30px;
+  margin-right: 190px;
+}
+
+.tr {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contentCenterAthlete {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.contentMedalAthlete {
+  display: flex;
+}
+
+.medalAthlete {
+  width: 30px;
+  margin-right: 30px;
+}
+
+.inputSearch {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.search {
+  position: absolute;
+  width: 28px;
+  margin-left: 111px;
+  margin-top: 92px;
+}
+
+.line-table {
+  width: 100%
+}
+
+.country, .golds, .silvers, .bronze, .total {
+  opacity: 0;
+}
+
+.country:hover, .golds:hover, .silvers:hover, .bronze:hover, .total:hover {
+  opacity: 1;
+  transition: ease 0.2s;
+  cursor: pointer;
+}
+
+.athleta, .medal {
+  opacity: 0;
+}
+
+.medal:hover, .athleta:hover {
+  opacity: 1;
+  transition: ease 0.2s;
+  cursor: pointer;
+}
+
+
+.paragraph {
+  font-size: 50px;
+  font-family: fantasy;
+  font-style: italic;
+  color: darkgoldenrod;
+}

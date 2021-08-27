@@ -1,9 +1,9 @@
 import React from 'react';
-import Ranking from './Pages/Ranking';
+import Ranking from './pages/Ranking';
 import { BrowserRouter, Route } from 'react-router-dom';
-import Home from './Pages/Home';
+import Home from './pages/Home';
 import Header from './components/Header';
-// import './App.css';
+import './style/Header.css';
 
 function App() {
   return (

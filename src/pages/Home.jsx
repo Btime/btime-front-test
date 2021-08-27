@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 import { saveName } from '../actions';
+import '../style/Home.css';
+
 
 function Home({saveName}) {
   const [ inputValue, setInputValue ] = useState('');
@@ -15,13 +17,15 @@ function Home({saveName}) {
   }
 
   return (
-    <div>
-      <h1>Seja Bem-Vindo ao Ranking de Medalhas!</h1>
-      <label>
-        Digite seu nome:
-        <input onChange={handleChange} type="text" />
-      </label>
-      <Link onClick={handleClick} to="/ranking">Entrar</Link> 
+    <div className="content">
+      <div className="text">
+        <h1>Seja Bem-Vindo ao Ranking de Medalhas!</h1>
+        <label>
+          Digite seu nome:
+          <input onChange={handleChange} type="text" />
+        </label>
+        <Link onClick={handleClick} to="/ranking">Entrar</Link> 
+      </div>
     </div>
   )
 }
